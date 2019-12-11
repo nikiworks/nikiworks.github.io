@@ -1,0 +1,131 @@
+/* common parts*/
+body{
+  background: #efefef;
+}
+
+header h1{
+  z-index: 100;
+  position: fixed;
+  top: 0.6em;
+  left:10px;  
+  font-size: 14px;
+
+}
+header nav {
+  z-index: 100;
+  margin: 0;
+  width: 400px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+header nav ul {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  flex: 1;
+}
+
+header nav ul li a {
+  color: #333;
+  display: block;
+  padding: 0.6em 0.4em;
+  text-align: center;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #fff;
+}
+
+.contacts{
+  z-index: 100;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;  
+}
+
+.copy{
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  right: 6px;
+  transform: rotate( -90deg );
+  font-size: 12px;
+}
+
+
+.wrap{
+  padding: 50px 150px;
+  overflow: hidden;
+  font-size: 24px;
+  background: #ffffff;
+  background-image: url("../svg/headline.svg");
+  background-size: 100% 150px;
+  background-repeat: no-repeat;
+}
+.contents{
+  
+}
+
+/* text-style */
+
+p{
+  margin-bottom:10px;
+}
+table,code{
+  margin:0 0 20px 0;
+}
+ol,ul{
+  padding: 0 50px;
+}
+code{
+  display: block;
+  background: #efefef;
+  padding: 20px;
+  border-radius: 2px;
+}
+table{
+  border: 1px solid #efefef;
+  width: 100%;
+}
+table thead{
+  background: #efefef;
+  
+}
+
+
+
+/* for sp */
+@media screen and (max-width: 768px) {
+  header h1{
+    font-size: 12px;
+  }
+  header nav{
+    width: 70%;
+    right: 0;
+
+  }
+  header nav ul {
+    font-size: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  header nav ul li {
+    flex: auto;
+    width: 25%;
+  }
+  .wrap{
+    padding: 50px 25px;
+    font-size: 16px;
+  }
+
+
+}
