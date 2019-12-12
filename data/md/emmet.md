@@ -1,30 +1,14 @@
-# emmetの記法メモ
-emmetのチートシートです
-あああ
-
-できること  |記法     |
---|---  |--
-HTML/head/body生成  |  ! | !   
+# emmetの記法について
 
 
-逆引き   | 記号 | 記法 | 出力結果
----------|------|------|--------------------
-HTML生成 | !    | !    | html(head~bodyタグ)
-         |      |      |
-         |      |      |
-         |      |      |
-         |      |      |
-         |      |      |
-         |      |      |
+## HTMLタグ
 
-
-  記号	役割	記述例
-  #	ID名の指定	div#idName
-  .	class名の指定	div.className
-  >	要素を入れ子にする	div>p
-  +	要素を同階層に展開する	div+p
-  ^	一階層上に展開	div>p^ul
-  *	要素を複数展開	li*3
-  {}	テキストの挿入	p{テキスト}
-  $	連番をつける	li.item-$*3
-  !	HTMLの雛形	!
+逆引き       | 記号 | 記法サンプル | 出力結果
+-------------|------|--------------|------------------------------------------------
+HTML生成     | !    | !            | html(head~bodyタグ)
+下階層 | >    | header>ul>li | ＜header＞<br>＜ul＞<br>＜li＞<br>＜/li＞<br>＜/ul＞<br>＜/header＞
+同階層 |   +   |          h2+p    |＜h2＞＜/h2＞<br>＜p＞＜/p＞
+上階層(に戻る)             | ^     | ul>li^p |＜ul＞<br>＜li＞<br>＜/li＞<br>＜/ul＞<br>＜p＞＜/p＞
+id             |   #   | h1#logo             |＜h1 id="logo"＞＜/h1＞
+class             |   .   | div.box             |＜div class="box"＞＜/div＞
+連番でid,classs名             |   $   |    li.-$*3          |
