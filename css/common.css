@@ -56,12 +56,16 @@ header nav ul li a:hover {
 }
 
 .copy{
-  z-index: 100;
-  position: fixed;
-  top: 60%;
-  right: 10px;
-  transform: rotate( -90deg );
-  font-size: 12px;
+	z-index: 100;
+    position: fixed;
+    top: 45%;
+    right: 10px;
+    transform: rotate( 180deg );
+    font-size: 12px;
+    writing-mode: vertical-lr;
+    text-align: center;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode:vertical-rl;   
 }
 
 
@@ -75,6 +79,26 @@ header nav ul li a:hover {
   background-repeat: no-repeat;
 }
 
+.column-2 {
+  display: table;
+  width: 100%;
+}
+.main-column {
+  display: table-cell;
+}
+.side-column {
+  display: table-cell;
+  width: 30%;
+  background-color: #777;
+}
+.side-column ul{
+	list-style: none;
+}
+.side-column ul li{
+	background-color: #efefef;
+	padding: 20px;
+
+}
 
 .grid {
   width: auto;
@@ -167,6 +191,14 @@ table thead{
     padding: 50px 25px;
     font-size: 16px;
   }
+	.main-column {
+	  display: table-cell;
+	}
+	.side-column {
+	  display: table-cell;
+	  width: 30%;
+	  background-color: #777;
+	}  
   .grid li {
     width: 100%;
     height: auto;
